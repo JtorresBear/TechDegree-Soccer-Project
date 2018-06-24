@@ -1,9 +1,10 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-// manually created an empty array
+// manually created an empty array that holds dictionaries
 var players: [[String: Any]] = []
 
+//added player info to array of players
 players.append(["Name": "Joe Smith", "Height": 42, "Soccer Experience": true, "Guardians": "Jim and Jan Smith"])
 players.append(["Name": "Jill Tanner", "Height": 36, "Soccer Experience": true, "Guardians": "Clara Tanner"])
 players.append(["Name": "Bill Bon", "Height": 43, "Soccer Experience": true , "Guardians": "Sara and Jenny Bon"])
@@ -23,6 +24,6 @@ players.append(["Name": "Phillip Helm", "Height": 44, "Soccer Experience": true,
 players.append(["Name": "Les Clay", "Height": 42, "Soccer Experience": true , "Guardians": "Wynonna Brown"])
 players.append(["Name": "Herschel Krustofski", "Height": 45, "Soccer Experience": true, "Guardians": "Hyman and Rachel Krustofski"])
 
-//var num = players.count
+var num = players.count
 
-//print(num)
+print(num)
