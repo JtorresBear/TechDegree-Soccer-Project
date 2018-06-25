@@ -57,9 +57,10 @@ var teamRaptors:[[String: Any]] = []
 var experiencedPlayers: [[String: Any]] = []
 var inexperiencedPlayers: [[String: Any]] = []
 
-// created my only array of just Strings
+// created letters array to go to parents
 var letters:[String] = []
 
+//this is to count through mulitple loops
 var counter = 0
 //this will loop through the array of players and put the player in one of two arrays. 1st being the experienced, then the inexperienced
 
@@ -93,9 +94,7 @@ while(counter < experiencedPlayers.count)
     counter+=1
 }
 
-teamDragons
-teamRaptors
-teamSharks
+
 //resetting counter
 counter = 0
 
