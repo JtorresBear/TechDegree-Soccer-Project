@@ -8,6 +8,7 @@ func getHeight(height: String, someDictionary : [String: Any]) -> Int
     return someDictionary[height] as! Int
 }
 // gets the experience whether or not he needs it.
+
 func getSoccerExp(socExp: String, someDictionary : [String: Any])-> Bool
 {
     return someDictionary[socExp] as! Bool
@@ -64,7 +65,7 @@ var letters:[String] = []
 var counter = 0
 //this will loop through the array of players and put the player in one of two arrays. 1st being the experienced, then the inexperienced
 
-repeat
+while counter < players.count
 {
     //used a function that returns a boolean to figure out which array these players belonged in.
     if(getSoccerExp(socExp: "Soccer Experience", someDictionary: players[counter]))
@@ -75,14 +76,11 @@ repeat
     {
         inexperiencedPlayers.append(players[counter])
     }
-    
-    
     counter += 1
-} while counter < players.count
+}
 
 // reset the counter for further use in this code
 counter = 0
-
 //adding experienced players first
 while(counter < experiencedPlayers.count)
 {
